@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace tp2
+namespace tp2A
 {
-    class Tp2a
+    class Program
     {
         private static void AfficheTitre(string msg)
         {
@@ -16,7 +16,7 @@ namespace tp2
         private static void FormaterNumero(string msg, string numero)
         {
             string noFormate = "(" + numero.Substring(0, 3) + ") " + numero.Substring(3, 3) + "-" + numero.Substring(6);
-            Console.WriteLine("{0:-20} : {1}", msg, noFormate);
+            Console.WriteLine("{0,-20} : {1}", msg, noFormate);
         }
 
         private static void CompterChiffreRepetition(string tel, int chiffre, string msg)
