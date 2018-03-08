@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace tp2A
+/* ************************
+ *      IFT1179 - TP2
+ * Stéphane Barthélemy
+ *        20084771
+ ************************ */
+
+namespace tp2
 {
-    class Program
+    class Tp2A
     {
         private static void AfficheTitre(string msg)
         {

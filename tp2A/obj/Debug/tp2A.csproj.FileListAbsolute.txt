@@ -4,3 +4,10 @@ C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2\bin\Debug\tp2.pdb
 C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2\obj\Debug\tp2A.csproj.CoreCompileInputs.cache
 C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2\obj\Debug\tp2.exe
 C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2\obj\Debug\tp2.pdb
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\bin\Debug\tp2.exe.config
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\bin\Debug\tp2.exe
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\bin\Debug\tp2.pdb
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\obj\Debug\tp2A.csprojResolveAssemblyReference.cache
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\obj\Debug\tp2A.csproj.CoreCompileInputs.cache
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\obj\Debug\tp2.exe
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2A\obj\Debug\tp2.pdb

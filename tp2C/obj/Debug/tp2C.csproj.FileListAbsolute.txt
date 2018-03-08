@@ -1,0 +1,7 @@
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\bin\Debug\tp2C.exe.config
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\bin\Debug\tp2C.exe
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\bin\Debug\tp2C.pdb
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\obj\Debug\tp2C.csprojResolveAssemblyReference.cache
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\obj\Debug\tp2C.csproj.CoreCompileInputs.cache
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\obj\Debug\tp2C.exe
+C:\Users\Stephantasy\Desktop\IFT1179_C#\TP2\tp2C\obj\Debug\tp2C.pdb

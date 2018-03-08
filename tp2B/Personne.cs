@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace tp2B
+/* ************************
+ *      IFT1179 - TP2
+ * Stéphane Barthélemy
+ *        20084771
+ ************************ */
+
+namespace tp2
 {
-    class Personne
+    public class Personne
     {
         private string naissance;   // format "jj/mm/aaaa", ex : "25/12/1993"
         private char sexe;

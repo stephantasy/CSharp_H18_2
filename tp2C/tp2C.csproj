@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4E2104F4-2367-4862-B39E-6B6D064CD6FC}</ProjectGuid>
+    <ProjectGuid>{879DCA24-16E6-4480-862E-59FF4C774A8F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>tp2</RootNamespace>
-    <AssemblyName>tp2</AssemblyName>
+    <RootNamespace>tp2C</RootNamespace>
+    <AssemblyName>tp2C</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tp2A.cs" />
+    <Compile Include="Personne.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="Tp2C.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
