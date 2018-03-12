@@ -12,6 +12,7 @@ namespace tp2
 {
     class Tp2A
     {
+        // Permet d'afficher l'énnoncé de ce qui est attendu
         private static void AfficheTitre(string msg)
         {
             string tabs = new String('-', msg.Length);
@@ -19,15 +20,20 @@ namespace tp2
             Console.WriteLine("{0}\n", tabs);
         }
 
+
+        // Formate et affiche le numéro de téléphone
         private static void FormaterNumero(string msg, string numero)
         {
             string noFormate = "(" + numero.Substring(0, 3) + ") " + numero.Substring(3, 3) + "-" + numero.Substring(6);
             Console.WriteLine("{0,-20} : {1}", msg, noFormate);
         }
 
+
+        // Permet de compter le "chiffre" passé en paramètre  dans "tel" et affiche le résultat
         private static void CompterChiffreRepetition(string tel, int chiffre, string msg)
         {
             int nombre = 0;
+            // On parcours la String à la recherche du chiffre
             foreach (var item in tel)
             {
                 if (int.TryParse(item.ToString(), out int result))
@@ -38,14 +44,19 @@ namespace tp2
                     }
                 }
             }
+            // Affichage
             Console.WriteLine("Il y a {0} fois le chiffre {1} dans le numéro de téléphone de {2}", nombre, chiffre, msg);
         }
 
+
+        // Permet de compter les chiffres pairs ou impairs dans "tel"
         private static void CompterChiffrePairImpair(string tel, bool comptePair, string msg)
         {
             int nombre = 0;
             string midMsg = "";
             List<int> listeChiffre = new List<int>();
+
+            // On compte les chiffres pairs ou impairs
             foreach (var item in tel)
             {
                 if (int.TryParse(item.ToString(), out int result))
@@ -69,6 +80,7 @@ namespace tp2
                 }
             }
 
+            // Message pair ou impair
             if (comptePair)
             {
                 midMsg = "pair(s)";
@@ -78,6 +90,7 @@ namespace tp2
                 midMsg = "impair(s)";
             }
 
+            // Affichage du résultat
             if (nombre > 0)
             {                
                 Console.WriteLine("Il y a {0} chiffre(s) {1} dans le numéro de téléphone de {2}", nombre, midMsg, msg);
@@ -89,10 +102,14 @@ namespace tp2
             }
         }
 
+
+        // Affiche les chiffres communs entres 2 numéro de tél. et les affiches
         private static void AfficherChiffresCommuns(string tel1, string tel2)
         {
             char[] communs = new char[tel1.Length];
             int index = 0;            
+
+            // Compare les 2 numéros de tél.
             foreach (var ch1 in tel1)
             {
                 foreach (var ch2 in tel2)
@@ -115,6 +132,7 @@ namespace tp2
                 }
             }
 
+            // Affichage du résultat
             if (index > 0)
             {
                 Console.Write("Ce sont :");
@@ -133,11 +151,15 @@ namespace tp2
             }
         }
 
+
+        // Affiche le chiffre le plus grand dans "tel"
         private static void AfficherChiffresPlusGrand(string tel, string msg)
         {
             Console.WriteLine("Le chiffre {0} est le plus grand dans le numéro de téléphone de {1}", tel.ToArray().Max(), msg);
         }
 
+
+        // Point d'entré du programme
         static void Main(string[] args)
         {
             // Données du TP

@@ -31,6 +31,10 @@ namespace tp2
             {
                 return sexe;
             }
+            set
+            {
+                sexe = value;
+            }
         }
 
         public string Genre {
@@ -44,6 +48,20 @@ namespace tp2
         public override string ToString()
         {
             return string.Format("{0}, sexe {1}, taille {2:F2} mètre, {3:F1} kg, numéro {4}", nom, Genre.ToLower(), taille, poids, Numero);
+        }
+
+        
+        public override bool Equals(object obj)
+        {
+            if (this == obj)
+                return true;
+            else if (this.GetType() != obj.GetType())
+                return false;
+            else
+            {
+                Personne autre = (Personne)obj;
+                return nom.ToLower() == autre.nom.ToLower();    // On ignore la casse
+            }
         }
 
     }
