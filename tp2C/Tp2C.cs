@@ -1,6 +1,12 @@
 ﻿using System;
 using System.IO;
 
+/* ************************
+ *      IFT1179 - TP2
+ * Stéphane Barthélemy
+ *        20084771
+ ************************ */
+
 namespace tp2
 {
     class Tp2C

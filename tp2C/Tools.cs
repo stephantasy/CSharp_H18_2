@@ -1,5 +1,11 @@
 ﻿using System;
 
+/* ************************
+ *      IFT1179 - TP2
+ * Stéphane Barthélemy
+ *        20084771
+ ************************ */
+
 namespace tp2
 {
     public static class Tools
