@@ -27,7 +27,7 @@ namespace tp2
             // Afficahge du résultat
             if (nb > 0)
             {
-                Console.WriteLine("{0} personne(s) sont né(s) en {1}.", nb, mois);
+                Console.WriteLine("{0} personne(s) sont née(s) en {1}.", nb, mois);
             }
             else
             {
@@ -82,11 +82,9 @@ namespace tp2
         private static void AfficherTableau(Personne[] personnes)
         {
             Console.WriteLine("Contenu du tableau Personnes :\n");
-            Console.WriteLine(" Indice\tTableau pers");
-            Console.WriteLine("--------------------------------");
             for (int i = 0; i < personnes.Length; i++)
             {
-                Console.WriteLine(" {0,3}\t{1}", i, personnes[i]);
+                Console.WriteLine(" {0,3})\t{1}", i, personnes[i]);
             }
         }
 
@@ -104,17 +102,16 @@ namespace tp2
         static void Main(string[] args)
         {
             // Donnée du TP
-            Personne[] personnes =
-            {
-                new Personne('F', "16/11/1992", 2),
-                new Personne('F', "02/05/1990", 1),
-                new Personne('M', "23/11/2000", 5),
-                new Personne('F', "19/02/1985"),
-                new Personne('F', "30/11/1991", 3),
-                new Personne('M', "14/05/1997", 1)
-            };
             Personne pers1 = new Personne('F', "19/02/1996", 3),
                      pers2 = new Personne('M', "27/07/1990");
+            Personne[] personnes = {
+                                        new Personne('F', "16/11/1992", 2),
+                                        new Personne('F', "02/05/1990", 1),
+                                        new Personne('M', "23/11/2000", 5),
+                                        new Personne('F', "19/02/1985"),
+                                        new Personne('F', "30/11/1991", 3),
+                                        new Personne('M', "14/05/1997", 1)
+                                    };
 
 
             // 0. Affichage des informations des personnes en utilisant la méthode "Afficher"
@@ -152,3 +149,78 @@ namespace tp2
         }
     }
 }
+
+// EXECUTION
+/*
+
+0. Affichage des informations des personnes en utilisant la méthode Afficher() :
+--------------------------------------------------------------------------------
+
+Informations de pers1 :
+Femme née le 19 février 1996, consomme 3 tasse(s) de café
+
+Informations de pers2 :
+Homme né le 27 juillet 1990, consomme 0 tasse(s) de café
+
+
+
+
+1. Affiche le contenu du tableau pers en utilisant ToString :
+-------------------------------------------------------------
+
+Contenu du tableau Personnes :
+
+   0)   Femme née le 16 novembre 1992, consomme 2 tasse(s) de café
+   1)   Femme née le 02 mai 1990, consomme 1 tasse(s) de café
+   2)   Homme né le 23 novembre 2000, consomme 5 tasse(s) de café
+   3)   Femme née le 19 février 1985, consomme 0 tasse(s) de café
+   4)   Femme née le 30 novembre 1991, consomme 3 tasse(s) de café
+   5)   Homme né le 14 mai 1997, consomme 1 tasse(s) de café
+
+
+
+2. Détermine et affiche les informations de la femme qui consomme le plus de café :
+-----------------------------------------------------------------------------------
+
+Femme consommant le plus de café :
+Femme née le 30 novembre 1991, consomme 3 tasse(s) de café
+
+
+
+
+3. Retranche 1 tasse de café à tous les hommes (puis réaffiche le tableau) :
+----------------------------------------------------------------------------
+
+Contenu du tableau Personnes :
+
+   0)   Femme née le 16 novembre 1992, consomme 2 tasse(s) de café
+   1)   Femme née le 02 mai 1990, consomme 1 tasse(s) de café
+   2)   Homme né le 23 novembre 2000, consomme 4 tasse(s) de café
+   3)   Femme née le 19 février 1985, consomme 0 tasse(s) de café
+   4)   Femme née le 30 novembre 1991, consomme 3 tasse(s) de café
+   5)   Homme né le 14 mai 1997, consomme 0 tasse(s) de café
+
+
+
+4. Trie le tableau selon le nombre de tasses de café (puis réaffiche le tableau) :
+----------------------------------------------------------------------------------
+
+Contenu du tableau Personnes :
+
+   0)   Femme née le 19 février 1985, consomme 0 tasse(s) de café
+   1)   Homme né le 14 mai 1997, consomme 0 tasse(s) de café
+   2)   Femme née le 02 mai 1990, consomme 1 tasse(s) de café
+   3)   Femme née le 16 novembre 1992, consomme 2 tasse(s) de café
+   4)   Femme née le 30 novembre 1991, consomme 3 tasse(s) de café
+   5)   Homme né le 23 novembre 2000, consomme 4 tasse(s) de café
+
+
+
+5. Compte et affiche le nombre de personnes qui sont nées au mois de novembre :
+-------------------------------------------------------------------------------
+
+3 personne(s) sont née(s) en novembre.
+
+
+ */
+

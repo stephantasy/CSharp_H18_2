@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace tp2
 {
@@ -36,7 +32,6 @@ namespace tp2
 
             return d;
         }
-        // Cette fonction est récursive car dans son corps on appelle cette même fonction (2 fois)
         public static void QuickSort(Personne[] tab, int gauche, int droite)
         {
             if (droite > gauche) /* au moins 2 éléments */
@@ -78,6 +73,43 @@ namespace tp2
                 else {
                     return milieu;
                 }
+            }
+        }
+
+        /*************************************
+         *  === Suppression d'une ligne  ===
+         *************************************/
+        public static void SupprimerLigneDansTableau(Personne[] tab, int index)
+        {
+            if(index <= tab.Length)
+            {
+                // On copie le tableau
+                Personne[] tabTemp = new Personne[tab.Length];
+                Array.Copy(tab, tabTemp, tab.Length);
+
+                // On remplace les données du tableau d'origine avec les éléments du tableau copié
+                // depuis la ligne à supprimer jusqu'à la fin
+                Array.Copy(tabTemp, index+1, tab, index, tab.Length-index-1);
+            }
+        }
+
+        /*************************************
+         *  === Insertion d'une ligne  ===
+         *************************************/
+        public static void InsererLigneDansTableau(Personne[] tab, Personne nouvellePersonne, int index)
+        {
+            if (index <= tab.Length)
+            {
+                // On copie le tableau
+                Personne[] tabTemp = new Personne[tab.Length];
+                Array.Copy(tab, tabTemp, tab.Length);
+
+                // On place la nouvelle personne dans le tabelau
+                tab[index] = nouvellePersonne;
+
+                // On rempli le reste du tableau d'origine avec les éléments du tableau copié
+                // depuis la ligne insérée +1 jusqu'à la fin
+                Array.Copy(tabTemp, index, tab, index + 1, tab.Length - index-1);
             }
         }
 

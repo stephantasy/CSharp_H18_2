@@ -81,7 +81,7 @@ namespace tp2
         // Affichage des information sur la personne
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3}", sexe, naissance, nbCafe, nbCafe > 1 ? "tasses" : "tasse");
+            return string.Format("{0} {1} le {2}, consomme {3} tasse(s) de café", Genre, (sexe == 'M' ? "né" : "née"), GetDateNaissance(), nbCafe);
         }        
 
         // Renvoie la date de naissance au format "01 janvier 1970"

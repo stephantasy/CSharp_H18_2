@@ -198,3 +198,46 @@ namespace tp2
         }
     }
 }
+
+// EXECUTION
+/*
+ 
+
+1. Affichage des numéro de téléphone :
+--------------------------------------
+
+Téléphone de l'UdeM  : (514) 343-6111
+Téléphone de Jean    : (450) 189-7456
+
+
+2. Compte et affiche des chiffres :
+-----------------------------------
+
+Il y a 4 fois le chiffre 1 dans le numéro de téléphone de l'UdeM
+Il y a 0 fois le chiffre 2 dans le numéro de téléphone de Jean
+Il y a 2 fois le chiffre 4 dans le numéro de téléphone de Jean
+
+
+3. Compte et affiche les chiffres pairs et impairs :
+----------------------------------------------------
+
+Il y a 3 chiffre(s) pair(s) dans le numéro de téléphone de l'UdeM
+Ce sont : 4 4 6
+Il y a 5 chiffre(s) impair(s) dans le numéro de téléphone de Jean
+Ce sont : 5 1 9 7 5
+
+
+4. Déterminer et afficher les chiffres communs entre les 2 numéros de téléphone :
+---------------------------------------------------------------------------------
+
+Ce sont : 1 4 5 6
+
+
+5. Déterminer et afficher le plus grand chiffre :
+-------------------------------------------------
+
+Le chiffre 6 est le plus grand dans le numéro de téléphone de l'UdeM
+Le chiffre 9 est le plus grand dans le numéro de téléphone de Jean
+
+    
+ */
